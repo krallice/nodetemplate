@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6369a65ebd997f9b17d26f67
+
+###
+
+DELETE http://localhost:3000/subscribers/6369a8877e2fe390a76c8f07
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "noclab.com.au"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/6369a90b7e2fe390a76c8f09
+Content-Type: application/json
+
+{
+    "name": "Miles Davis"
+}
